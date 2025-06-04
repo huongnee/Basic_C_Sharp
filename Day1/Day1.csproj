@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46577BC7-E7A0-4727-9FCB-FC8804E972A7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Day1</RootNamespace>
+    <AssemblyName>Day1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DaoNguocChuoi.cs" />
+    <None Include="snt.cs" />
+    <None Include="Example.cs" />
+    <None Include="HelloWorld.cs" />
+    <None Include="Program.cs" />
+    <None Include="Example2.cs" />
+    <None Include="Day2\Encapsulation\Bank.cs" />
+    <None Include="Day2\Encapsulation\BankAccount.cs" />
+    <None Include="Day2\Encapsulation\Person.cs" />
+    <None Include="Day2\Array\Array1Chieu\arrayVD1.cs" />
+    <None Include="Day2\Method\TutorialMethod.cs" />
+    <None Include="Day2\Nullable\Nullable.cs" />
+    <None Include="Day2\Array\Array1Chieu\arrayVD2.cs" />
+    <None Include="Day2\Array\Array2Chieu\vd1.cs" />
+    <None Include="Day2\Array\Array2Chieu\vd2.cs" />
+    <None Include="Day2\BaiTap\Method\b1.cs" />
+    <None Include="Day2\Chuoi\ChuoiNe.cs" />
+    <None Include="Day2\BaiTap\Method\b2.cs" />
+    <None Include="Day2\BaiTap\Array\b1arr.cs" />
+    <None Include="Day2\BaiTap\Method\b3.cs" />
+    <None Include="Day2\BaiTap\Array\b2arr.cs" />
+    <None Include="Day2\BaiTap\Array\b3arr.cs" />
+    <None Include="Day2\BaiTap\Chuoi\b1chuoi.cs" />
+    <None Include="Day2\BaiTap\Chuoi\b2chuoi.cs" />
+    <None Include="Day2\BaiTap\Chuoi\b3chuoi.cs" />
+    <None Include="Day2\Structure\vd1.cs" />
+    <None Include="Day2\Structure\vd2.cs" />
+    <None Include="Day2\Structure\bai1.cs" />
+    <None Include="Day2\Structure\bai2.cs" />
+    <None Include="Day2\Structure\bai3.cs" />
+    <None Include="Day2\Structure\bai4.cs" />
+    <None Include="Day2\Enum\vd1.cs" />
+    <None Include="Day2\Enum\vd2.cs" />
+    <None Include="Day2\Enum\vd3.cs" />
+    <Compile Include="Day2\Enum\vd4.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
