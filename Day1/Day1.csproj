@@ -33,8 +33,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.9.0.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Pipelines.9.0.5\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.9.0.5\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.9.0.5\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DaoNguocChuoi.cs" />
+    <None Include="packages.config" />
     <None Include="snt.cs" />
     <None Include="Example.cs" />
     <None Include="HelloWorld.cs" />
@@ -77,12 +110,55 @@
     <None Include="Day2\Enum\vd1.cs" />
     <None Include="Day2\Enum\vd2.cs" />
     <None Include="Day2\Enum\vd3.cs" />
-    <Compile Include="Day2\Enum\vd4.cs" />
+    <None Include="Day2\Enum\vd4.cs" />
+    <None Include="OOP\Lop_DoiTuong\vidu1.cs" />
+    <None Include="OOP\Inheritance\vidu1.cs" />
+    <None Include="OOP\BaiTapOOP\Lop_DoiTuong\Rectangle.cs" />
+    <None Include="OOP\BaiTapOOP\Inheritance\MainVD1.cs" />
+    <None Include="OOP\BaiTapOOP\Inheritance\MainVD2.cs" />
+    <None Include="OOP\BaiTapOOP\Polymorphism\overidee\HinhHoc.cs" />
+    <None Include="OOP\BaiTapOOP\Abstraction\interface1\MainVD1.cs" />
+    <None Include="OOP\BaiTapOOP\Abstraction\abs\vdAbs.cs" />
+    <None Include="OOP\ChiThiTienXuLy\vdTXL.cs" />
+    <None Include="OOP\ChiThiTienXuLy\vd2TXL.cs" />
+    <None Include="OOP\RegularExpression\vidu1.cs" />
+    <None Include="OOP\RegularExpression\bai1.cs" />
+    <None Include="OOP\Exception\vidu1.cs" />
+    <None Include="OOP\Exception\vidu2.cs" />
+    <None Include="OOP\Exception\BaiTap1.cs" />
+    <None Include="OOP\Exception\BaiTap2.cs" />
+    <None Include="OOP\InOutput\docFile.cs" />
+    <None Include="OOP\InOutput\ghiFile.cs" />
+    <None Include="OOP\InOutput\vd.cs" />
+    <None Include="Advance\lythuyet.cs" />
+    <None Include="Advance\attribute\pt_Obsolete.cs" />
+    <None Include="Advance\attribute\pt_Serializable.cs" />
+    <None Include="Advance\attribute\pt_Serializable_2.cs" />
+    <None Include="Advance\attribute\pt_DllImport.cs" />
+    <None Include="Advance\attribute\Conditional.cs" />
+    <None Include="Advance\attribute\DebuggerStepThrough.cs" />
+    <None Include="Advance\attribute\InfoAttribute.cs" />
+    <None Include="Advance\BaiTapATT\b1.cs" />
+    <None Include="Advance\BaiTapATT\b2.cs" />
+    <None Include="Advance\Refection\vd1.cs" />
+    <None Include="Advance\Refection\vd2.cs" />
+    <None Include="Advance\Refection\bai1.cs" />
+    <None Include="Advance\Refection\bai2.cs" />
+    <None Include="Advance\Refection\bai3.cs" />
+    <None Include="Advance\Refection\bai4.cs" />
+    <None Include="Advance\Refection\bai5.cs" />
+    <None Include="Advance\Refection\bai6.cs" />
+    <None Include="Advance\BaiTapATT\b3.cs" />
+    <Compile Include="Advance\BaiTapATT\b4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="OOP\Abstraction\" />
+    <Folder Include="OOP\BaiTapOOP\Polymorphism\overload\" />
+    <Folder Include="OOP\Polymorphism\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

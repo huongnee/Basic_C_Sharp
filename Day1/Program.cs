@@ -343,3 +343,114 @@ Chuyển đổi kiểu là việc chuyển một giá trị từ kiểu dữ li�
     - Bạn tạo ra một tập hợp các tên gọi có ý nghĩa, mỗi tên tương ứng với một con số phía sau 
     (mà bạn có thể dùng trong chương trình).
  */
+
+
+/*
+    Hướng đối tượng -OOP
+Hướng đối tượng - OOP trong c#
+C# - Lớp(class) - Đối tượng(object)
+C# - Tính kế thừa
+C# - Tính đa hình
+C# - Tính trừu tượng
+C# - Nạp chồng toán tử
+✅ Định nghĩa:
+Nạp chồng toán tử nghĩa là cho phép định nghĩa lại cách hoạt động của các toán tử (+, -, *, ==, !=, ...) đối với kiểu dữ liệu do người dùng tự định nghĩa (class/struct).
+
+Bạn có thể làm cho a + b hoạt động không chỉ với số, mà còn với đối tượng bạn tự tạo ra.
+C# - Interface
+🔌 2. Interface trong C#
+✅ Định nghĩa:
+Interface là một giao diện (khung) định nghĩa các phương thức, thuộc tính, sự kiện,... nhưng không cài đặt chúng. Lớp nào implement (cài đặt) interface thì phải định nghĩa cụ thể các thành phần bên trong interface đó.
+
+Interface giống như hợp đồng, lớp nào ký thì phải thực hiện đủ điều kiện.
+
+
+C# - Namespace
+✅ Định nghĩa:
+namespace là cách để nhóm các class, interface, enum, delegate,... vào 1 khu vực để tránh trùng tên và dễ quản lý code.
+
+Tưởng tượng giống như thư mục chứa các file. Giúp tổ chức và truy cập rõ ràng hơn.
+
+1.Class - đối tượng
+    🔸 Lớp (Class) là gì?
+    Là khuôn mẫu (template) để tạo ra các đối tượng, gồm các thuộc tính (fields) và phương thức (methods).
+    🔸 Đối tượng (Object) là gì?
+    Là một thể hiện (instance) cụ thể của lớp.
+    VD:Trong đời thực, một chiếc ô tô là một đối tượng. 
+     - Chiếc ô tô có các thuộc tính, chẳng hạn như trọng lượng và màu sắc, và các phương thức, chẳng hạn như lái xe và phanh.
+     - Lớp giống như một trình xây dựng đối tượng hoặc "bản thiết kế" để tạo ra các đối tượng.
+2. Tính kế thừa (Inheritance)
+    🔸 Kế thừa là gì?
+    Là khả năng tạo ra một lớp mới dựa trên một lớp đã có, kế thừa các thuộc tính và phương thức của lớp cha.
+    🔸 Khái niệm:
+    Kế thừa là cơ chế cho phép một lớp con kế thừa các thuộc tính và phương thức của lớp cha.
+    🔸 Lợi ích của kế thừa:
+    - Tái sử dụng mã nguồn
+    - Giảm thiểu lặp lại mã
+    - Tạo cấu trúc phân cấp rõ ràng
+    - Trong C#, có thể kế thừa các trường và phương thức từ lớp này sang lớp khác. 
+      Chúng tôi nhóm "khái niệm kế thừa" thành hai loại:
+        Lớp con (derived Class) - lớp kế thừa từ lớp khác
+        Lớp cơ sở (lớp cha) - lớp được kế thừa từ
+        Để kế thừa từ một lớp, hãy sử dụng :ký hiệu .
+        VD: class ConLop : LopCha { ... } // ConLop kế thừa từ LopCha
+3. Tính đa hình (Polymorphism)
+    ✅ Định nghĩa:
+        Đa hình là khả năng một phương thức có thể hoạt động theo nhiều cách khác nhau, tùy vào kiểu đối tượng thực tế gọi nó.
+        Có 2 loại đa hình:
+        Loại đa hình	Mô tả ngắn gọn
+        Compile-time (tĩnh)	Gọi là Overloading (nạp chồng phương thức)
+        Runtime (động)	Gọi là Overriding (ghi đè phương thức)
+4.TÍNH TRỪU TƯỢNG (Abstraction) trong C#
+    ✅ Định nghĩa:
+        Tính trừu tượng là việc ẩn đi chi tiết bên trong, chỉ hiển thị phần quan trọng mà người dùng cần biết.
+        Trong C#, có 2 cách để dùng trừu tượng:
+
+        Sử dụng abstract class
+        Sử dụng interface
+ */
+
+/*
+C# - Chỉ thị tiền xử lý(Preprocessor directives)
+    🧠 1. Chỉ thị tiền xử lý là gì?
+        Là lệnh bắt đầu bằng dấu # (hash).
+        Không phải là câu lệnh C# thông thường nên không dùng dấu chấm phẩy ;.
+        Được xử lý trước khi chương trình được biên dịch.
+        Giúp:
+                Viết code có điều kiện (chạy trong một số chế độ như DEBUG, RELEASE).
+
+                Báo lỗi, cảnh báo tuỳ tình huống.
+
+                Ẩn/hiện đoạn mã trong IDE (Visual Studio).
+C# - Regular Expression
+Regex (Regular Expression) là một “mẫu” (pattern) dùng để tìm kiếm, kiểm tra, hoặc thao tác với các chuỗi ký tự (text/string).
+
+Bạn có thể dùng Regex để:
+
+Kiểm tra xem chuỗi có đúng định dạng (ví dụ: số điện thoại, email) hay không.
+
+Tìm vị trí, thay thế, hoặc cắt chuỗi theo mẫu.
+
+
+C# - Exception Handling
+🔰 1. Exception là gì?
+👉 Exception (ngoại lệ) là lỗi phát sinh trong quá trình chạy chương trình (runtime) khiến chương trình bị dừng đột ngột nếu không xử lý.
+
+📌 Ví dụ:
+
+Chia cho 0
+
+Truy cập phần tử ngoài giới hạn mảng
+
+Mở file không tồn tại
+
+Chuyển chuỗi "abc" thành số → lỗi
+C# - File I/O
+/*
+🔍 I. File I/O là gì?
+File I/O (Input/Output) là thao tác đọc dữ liệu từ file (Input) hoặc ghi dữ liệu vào file (Output).
+ */
+/*
+ C# - Attribute
+
+ */
